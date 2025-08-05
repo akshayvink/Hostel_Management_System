@@ -1,4 +1,4 @@
-# Hostel Management System
+.# Hostel Management System
 
 This is a web-based application for managing a hostel. It provides separate interfaces for administrators and hostelers.
 

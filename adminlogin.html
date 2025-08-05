@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Happy Home Boys Hostel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #B3B3B3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #2B2B2B;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            border-top: 8px solid white;
+        }
+        h2 {
+            color: #B3B3B3;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid white;
+            border-radius: 25px;
+            font-size: 14px;
+            outline: none;
+        }
+        .btn {
+            background: white;
+            color: #2B2B2B;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #D4D4D4;
+        }
+        .links {
+            margin-top: -15px;
+            font-size: 14px;
+        }
+        .links a {
+            color: #B3B3B3;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .back-btn {
+            display: inline-block;
+            color: #2B2B2B;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Login</h2>
+        <form action="adminlogin.php" method="POST">
+            <input type="email" style="background-color:#2B2B2B; color:white;" name="email" placeholder="Enter your email" required>
+            <input type="password" style="background-color:#2B2B2B; color:white;" name="password" placeholder="Enter your password" required>
+            <button type="submit" name="submit" class="btn">Login</button>
+        </form>
+        <div class="links">
+            <!-- <a href="forgot_password.php">Forgot Password?</a><span style="color:#B3B3B3;"> |</span> -->
+            <a href="adminregister.php">Create Account</a>
+            <a href="index.html" class="back-btn">← Back</a>
+        </div>
+    </div>
+</body>
+</html>
